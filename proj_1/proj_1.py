@@ -15,7 +15,7 @@ height = im.size[1]
 rewriteImage = Image.new('L',(width, height), 'white')
 downSamplingImage = Image.new('L',(width/2, height/2), 'white')
 draw = ImageDraw.Draw(rewriteImage)
-
+l = 64
 # show the image
 im.show()
 
@@ -30,7 +30,7 @@ for i in range(width):
 	for j in range(height):
 		if(j % 2 == 0 & i % 2 == 0):
 			# reduce gray level by multipling 0.7 
-			draw.point((i/2, j/2), data[(j*width)+i]*0.7)
+			draw.point((i/2, j/2), (data[(j*width)+i]/l)*l)
 
 #save the output files
 rewriteImage.save('bird_rewrite.bmp', format='BMP')
