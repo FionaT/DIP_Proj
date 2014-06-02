@@ -1,7 +1,8 @@
 DIP_Proj_0201
 ========
 
-proj_02-01-a.py:
+proj_02-01-a.py
+---------------
 Write a halftoning computer program for printing gray-scale images 
 
 based on the dot patterns just discussed. Your program must be able 
@@ -16,6 +17,7 @@ span the full halftoning range.
 
 
 proj_02-01-b.py:
+---------------
 Write a program to generate a test pattern image consisting 
 
 of a gray scale wedge of size 256 x 256, whose first column 
@@ -28,6 +30,7 @@ Print this image using your gray-scale printing program.
 
 
 proj_02-01-c.py:
+---------------
 Print book Figs. 2.22(a) through (c) using your gray-scale 
 
 printing program. Do your results agree with the conclusions 
