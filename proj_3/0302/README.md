@@ -14,13 +14,9 @@ discussed in Section 3.3.1.
 
 proj_02-01-c.py:
 ---------------
-Here I use the Fig0222(a)(face).tif image to test 
+Here I use the Fig0222(a)(face).tif image to test my HE program. The figure 'original_hist_lena.png'
 
-my HE program. The figure 'original_hist_lena.png'
-
-shows the original lena image's histogram. And the
-
-figure 'HE_hist_lena.png' shows the lena image's 
+shows the original lena image's histogram. And the figure 'HE_hist_lena.png' shows the lena image's 
 
 histogram after histogram equalization technique.
 
