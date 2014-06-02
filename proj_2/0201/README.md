@@ -1,6 +1,3 @@
-DIP_Proj_0201
-========
-
 proj_02-01-a.py
 ---------------
 Write a halftoning computer program for printing gray-scale images 
