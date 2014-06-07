@@ -37,7 +37,7 @@ def spatial_filtering(i, j):
 			#count the average of the s*s pixels' grey level
 			average += data[array[a][b]]
 
-	average = average / 9
+	average = average / (s * s)
 
 	#return average
 	return average
@@ -68,5 +68,7 @@ for i in range(width):
 			p = spatial_filtering(i, j)
 			draw.point((i, j), p)
 
+filename = 'SFImage_rose_blursize=' + str(s) + '.bmp'
+
 #save the output files
-resultImage.save('SFImage_rose_size=5.bmp', format='BMP')
+resultImage.save(filename, format='BMP')
