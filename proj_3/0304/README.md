@@ -15,7 +15,7 @@ in the sense that it will be used in other projects
 to follow.
 
 
-proj_03-01-b.py:
+proj_03-04-b.py:
 ---------------
 lacplacement_image_fractured_spine.bmp is the answer image
 
