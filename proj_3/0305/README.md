@@ -13,6 +13,17 @@ Download Fig. 3.40(a) from the book web site and enhance it using the program yo
 
 developed in (a). Your objective is to approximate the result in Fig. 3.40(e).
 
+origin_image.bmp is the original image
+
+gaussian_blured_image.bmp is the result of blurring with a Gaussian filter
+
+scal_gmasked_image.bmp is the result after unsharp mask, and I scal the interval from
+
+[-255, 255] to [0, 255]
+
+unsharp.bmp is the result after unsharp masking that k = 1
+
+highboost_filter_image.bmp is the result after unsharp masking that k = 3 > 0 
 
 
 
