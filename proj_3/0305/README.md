@@ -9,7 +9,9 @@ the mask in Fig. 3.32(a).
 
 proj_03-05-b.py:
 ---------------
+Download Fig. 3.40(a) from the book web site and enhance it using the program you 
 
+developed in (a). Your objective is to approximate the result in Fig. 3.40(e).
 
 
 

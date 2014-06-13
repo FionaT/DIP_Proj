@@ -82,7 +82,7 @@ def unsharp_masking(k):
 	unsharpImage.save(filename, format='BMP')	
 
 # open an image and get its information
-image_name = 'Fig0219(rose1024)'
+image_name = 'Fig0340(a)(dipxe_text)'
 im = Image.open(image_name+'.tif')
 data = im.load()
 width, height = im.size
