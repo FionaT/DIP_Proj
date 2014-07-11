@@ -4,20 +4,19 @@
 from PIL import Image, ImageDraw
 import numpy as np 
 
-def F(u, v):
-	result = 0.0
+def f(u, v):
+	result = data[u, v]
 
-	for x in range(M):
-		for y in range(N):
-			angle = 2 * np.pi * (u * x / float_M + v * y / float_N)
-			e_part = 1 / complex(np.cos(angle), np.sin(angle) )
-			result += data[x, y] * e_part
+	if(u == 0 and v == 0):
+		return result
+	else:
+		result = round(result, 4)
+		result = result / (u + v) 
 
-	result = np.sqrt(result.real * result.real + result.imag * result.imag)
+		return result
+	
 
-	return result
-
-im = Image.open('sample0.bmp')
+im = Image.open('sample4.bmp')
 data = im.load()
 M, N = im.size
 float_M = round(M, 4)
@@ -27,7 +26,8 @@ ans = [[0.0 for i in range(N)] for j in range(M)]
 
 for u in range(M):
 	for v in range(N):
-		ans[u][v] = F(u, v)
+		ans[u][v] = f(u, v)
+		print ans[u][v]
 
 resultImage = Image.new('L',(M, N), 'white')
 draw = ImageDraw.Draw(resultImage)
@@ -37,4 +37,4 @@ for i in range(M):
 			draw.point((i, j), ans[i][j])
 
 #save the output files
-resultImage.save('resultImage0.bmp', format='BMP')
+resultImage.save('ans_0401_a.bmp', format='BMP')
