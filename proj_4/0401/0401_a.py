@@ -11,7 +11,7 @@ def f(u, v):
 		return result
 	else:
 		result = round(result, 4)
-		result = result / (u + v) 
+		result = (-1)**(u + v) * result
 
 		return result
 	

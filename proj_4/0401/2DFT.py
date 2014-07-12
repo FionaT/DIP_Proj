@@ -17,7 +17,7 @@ def F(u, v):
 
 	return result
 
-im = Image.open('sample0.bmp')
+im = Image.open('sample4.bmp')
 data = im.load()
 M, N = im.size
 float_M = round(M, 4)
@@ -37,4 +37,4 @@ for i in range(M):
 			draw.point((i, j), ans[i][j])
 
 #save the output files
-resultImage.save('resultImage0.bmp', format='BMP')
+resultImage.save('resultImage4.bmp', format='BMP')
